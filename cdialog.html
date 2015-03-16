@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<meta name="keywords" content="">
+	<meta name="descriptions" content="">
+	<link rel="stylesheet" href="css/master.css">
+	<link rel="stylesheet" href="css/jquery.cdialog.css">
+	<style type="text/css">
+		.content{ text-align: center; padding: 20px;}
+		.a-btn{ padding: 10px;}
+	</style>
+</head>
+<body>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	<div class="content">
+		<input type="button" value="弹出提示框" class="a-btn" id="btnAlert" />
+		<input type="button" value="弹出警告框" class="a-btn" id="btnConfrim" />
+   		<input type="button" value="弹出tips框" class="a-btn" id="btnTips" />
+	</div>
+
+	<!-- <div id="dialogLayer" class="dialog-layer"></div>
+	<div id="dialogCon" class="dialog-con">
+		<div class="dc-tit">
+			<h3>提示标题</h3>
+			<i class="close">X</i>
+		</div>
+		<div class="dc-con">
+
+		</div>
+		<div class="dc-bot">
+			<a href="javascript:;" target="_self" class="dc-btn dc-btn-confim">确定</a>
+			<a href="javascript:;" target="_self" class="dc-btn dc-btn-cancel">取消</a>
+		</div>
+	</div> -->
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<script src="js/global/jquery-1.9.1.js"></script>
+	<script src="js/plugins/jquery.cdialog.js"></script>
+	<script>
+		var chtml = [];
+		chtml.push('<div class="aaa">');
+		chtml.push('	<h3>确定删除？</h3>');
+		chtml.push('</div>');
+		$('#btnConfrim').click(function() {
+			$.cDialog._confirm({
+				title: '删除提示',
+				className: 'c-confirm',
+				width:180,
+				height:100,
+				content:chtml.join("\n"),
+				isDrag:true,
+				confirmFun: confirmEvent,
+				cancelFun : cancelEvent
+
+			});
+		});
+		$('#btnAlert').click(function() {
+			$.cDialog._alert({
+				title:'提示框'
+			});
+		});
+		function confirmEvent(){
+			$.cDialog._tips({
+				width: 116,
+				height: 40,
+				content:'删除成功！'
+			});
+		};
+
+		function cancelEvent(){
+			alert("aaa")
+		}
+		$('body').on('click', '#cCloseBtn',function() {
+			alert("aaa");
+			$.cDialog._close();
+		});
+
+		$('#btnTips').click(function() {
+			$.cDialog._tips({
+				width: 116,
+				height: 40,
+				content:'删除成功！'
+			});
+		});
+	</script>
+</body>
+</html>
