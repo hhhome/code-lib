@@ -1,36 +1,208 @@
-.dialog-layer{ background: #000; opacity: 0.5; filter:alpha(opacity=50); position: fixed; left: 0; top: 0; height: 100%; width: 100%; z-index: 3000;}
-.dialog-con{ font-family: "Microsoft YaHei"; width: 400px; height: 300px; border-radius: 4px; background: #eee; position: absolute; z-index: 3001;}
-.dialog-con .dc-tit{ position: relative; background: #ccc; height: 30px;border-radius: 4px 4px 0 0;}
-.dialog-con .dc-tit h3{ padding: 0 10px; color: #fff; line-height: 30px;}
-.dialog-con .close{ position: absolute; right: 10px; top: 8px; background: #aaa; padding: 0 5px; color: #fff; cursor: pointer;}
-.dialog-con .dc-con{ height: 220px;}
-.dialog-con .dc-bot{ height: 50px; line-height: 50px; text-align: center; font-size: 0;}
-.dialog-con .dc-btn{ width: 50px; height: 30px; display: inline-block; border:1px solid #ccc; border-radius: 4px; background: #ccc; line-height: 30px; font-size: 14px; color: #fff; text-decoration: none;}
-.dialog-con .dc-btn:hover{ text-decoration: none;}
-.dialog-con .dc-btn-confrim{ background: #49AB47; margin-right: 10px;}
-
-.dialog-d{ font-family: "Microsoft YaHei"; width: 400px; height: 300px; border-radius: 4px; background: #eee; position: absolute; z-index: 3001;}
-.dialog-d .dc-tit{ position: relative; background: #09b173; height: 30px;border-radius: 4px 4px 0 0; }
-.dialog-d .dc-tit h3{ padding: 0 10px; color: #fff; line-height: 30px;}
-.dialog-d .close{ position: absolute; right: 10px; top: 8px; background: #089562; padding: 0 5px; color: #fff; cursor: pointer;}
-.dialog-d .dc-con{ height: 220px;}
-.dialog-d .dc-bot{ height: 50px; line-height: 50px; text-align: center; font-size: 0;}
-.dialog-d .dc-btn{ width: 50px; height: 30px; display: inline-block; border:1px solid #ccc; border-radius: 4px; background: #ccc; line-height: 30px; font-size: 14px; color: #fff; text-decoration: none;}
-.dialog-d .dc-btn:hover{ text-decoration: none;}
-.dialog-d .dc-btn-confrim{ background: #49AB47; margin-right: 10px;}
-
-.c-confirm{ font-family: "Microsoft YaHei"; width: 400px; height: 300px; border-radius: 4px; background: #eee; position: absolute; z-index: 3001; overflow: hidden;}
-.c-confirm .dc-tit{ position: relative; background: #09b173; height: 30px;border-radius: 4px 4px 0 0; }
-.c-confirm .dc-tit h3{ padding: 0 10px; color: #fff; line-height: 30px;}
-.c-confirm .close{ position: absolute; right: 10px; top: 8px; background: #089562; padding: 0 5px; color: #fff; cursor: pointer;}
-.c-confirm .dc-con{ height: 35px; line-height: 36px; color: #333; text-align: center;}
-.c-confirm .dc-bot{ height: 30px; line-height: 50px; text-align: center; font-size: 0;}
-.c-confirm .dc-btn{ width: 89px; height: 30px; display: inline-block;border-radius: 0 0  4px 4px; background: #ccc; line-height: 30px; font-size: 14px; color: #fff; text-decoration: none;}
-.c-confirm .dc-btn:hover{ text-decoration: none;}
-.c-confirm .dc-btn-confrim{ background: #49AB47;}
-
-
-.tips-box{font-family: "Microsoft YaHei"; width: 400px; height: 300px; border-radius: 4px; background: #eee; position: absolute; z-index: 3001;}
-.tips-box .tips-box-bg{ background: #000; opacity: 0.5;filter:alpha(opacity=50);position: absolute;border-radius: 4px;}
-.tips-box .tips-box-con{ position: absolute; text-align: center; height: 40px; line-height: 40px; color: #fff; font-size: 14px;}
-
+.dialog-layer {
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3000;
+}
+.dialog-con {
+    font-family: "Microsoft YaHei";
+    width: 400px;
+    height: 300px;
+    border-radius: 4px;
+    background: #eee;
+    position: absolute;
+    z-index: 3001;
+}
+.dialog-con .dc-tit {
+    position: relative;
+    background: #ccc;
+    height: 30px;
+    border-radius: 4px 4px 0 0;
+}
+.dialog-con .dc-tit h3 {
+    padding: 0 10px;
+    color: #fff;
+    line-height: 30px;
+}
+.dialog-con .close {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background: #aaa;
+    padding: 0 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.dialog-con .dc-con {
+    height: 220px;
+}
+.dialog-con .dc-bot {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 0;
+}
+.dialog-con .dc-btn {
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #ccc;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+.dialog-con .dc-btn:hover {
+    text-decoration: none;
+}
+.dialog-con .dc-btn-confrim {
+    background: #49AB47;
+    margin-right: 10px;
+}
+.dialog-d {
+    font-family: "Microsoft YaHei";
+    width: 400px;
+    height: 300px;
+    border-radius: 4px;
+    background: #eee;
+    position: absolute;
+    z-index: 3001;
+}
+.dialog-d .dc-tit {
+    position: relative;
+    background: #09b173;
+    height: 30px;
+    border-radius: 4px 4px 0 0;
+}
+.dialog-d .dc-tit h3 {
+    padding: 0 10px;
+    color: #fff;
+    line-height: 30px;
+}
+.dialog-d .close {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background: #089562;
+    padding: 0 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.dialog-d .dc-con {
+    height: 220px;
+}
+.dialog-d .dc-bot {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 0;
+}
+.dialog-d .dc-btn {
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #ccc;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+.dialog-d .dc-btn:hover {
+    text-decoration: none;
+}
+.dialog-d .dc-btn-confrim {
+    background: #49AB47;
+    margin-right: 10px;
+}
+.c-confirm {
+    font-family: "Microsoft YaHei";
+    width: 400px;
+    height: 300px;
+    border-radius: 4px;
+    background: #eee;
+    position: absolute;
+    z-index: 3001;
+    overflow: hidden;
+}
+.c-confirm .dc-tit {
+    position: relative;
+    background: #09b173;
+    height: 30px;
+    border-radius: 4px 4px 0 0;
+}
+.c-confirm .dc-tit h3 {
+    padding: 0 10px;
+    color: #fff;
+    line-height: 30px;
+}
+.c-confirm .close {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background: #089562;
+    padding: 0 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.c-confirm .dc-con {
+    height: 35px;
+    line-height: 36px;
+    color: #333;
+    text-align: center;
+}
+.c-confirm .dc-bot {
+    height: 30px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 0;
+}
+.c-confirm .dc-btn {
+    width: 89px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 0 0 4px 4px;
+    background: #ccc;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+.c-confirm .dc-btn:hover {
+    text-decoration: none;
+}
+.c-confirm .dc-btn-confrim {
+    background: #49AB47;
+}
+.tips-box {
+    font-family: "Microsoft YaHei";
+    width: 400px;
+    height: 300px;
+    border-radius: 4px;
+    background: #eee;
+    position: absolute;
+    z-index: 3001;
+}
+.tips-box .tips-box-bg {
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: absolute;
+    border-radius: 4px;
+}
+.tips-box .tips-box-con {
+    position: absolute;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+}
